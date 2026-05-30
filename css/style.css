@@ -197,6 +197,43 @@ h2 {
 .link-card h4 { font-size: 1.05rem; margin-bottom: 0.3rem; }
 .link-card p { color: var(--ink-dim); font-size: 0.86rem; line-height: 1.5; }
 
+/* ---------- Top 10 Picks ---------- */
+.asof { font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem; }
+.picks-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.3rem; }
+
+.pick-card { padding: 0; overflow: hidden; }
+.pick-photo { position: relative; aspect-ratio: 16 / 11; overflow: hidden; background: #0d1525; }
+.pick-photo img { width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.5s ease; }
+.pick-card:hover .pick-photo img { transform: scale(1.06); }
+.pick-photo .rank {
+  position: absolute; top: 0.7rem; left: 0.7rem; z-index: 2;
+  font-family: 'Fraunces', serif; font-weight: 800; font-size: 0.95rem;
+  color: #06241d; background: linear-gradient(120deg, var(--teal), var(--green));
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+  box-shadow: 0 6px 18px -6px rgba(94,224,201,0.7);
+}
+.pick-photo .town {
+  position: absolute; top: 0.7rem; right: 0.7rem; z-index: 2;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--ink); background: rgba(7,11,20,0.72); backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.18); padding: 0.25rem 0.65rem; border-radius: 999px;
+}
+.pick-photo::after { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(7,11,20,0.45), transparent 45%); }
+
+.pick-body { padding: 1.1rem 1.3rem 1.4rem; }
+.pick-price { font-family: 'Fraunces', serif; font-weight: 800; font-size: 1.6rem;
+  color: var(--green); line-height: 1; margin-bottom: 0.3rem; }
+.pick-addr { font-weight: 600; font-size: 1.02rem; color: var(--ink); margin-bottom: 0.45rem; }
+.pick-specs { font-size: 0.82rem; color: var(--teal); letter-spacing: 0.01em; margin-bottom: 0.6rem; }
+.pick-note { font-size: 0.9rem; color: var(--ink-dim); line-height: 1.55; margin-bottom: 0.9rem; }
+.pick-link { font-size: 0.85rem; font-weight: 600; color: var(--violet); }
+.pick-card:hover .pick-link { color: var(--teal); }
+
+.picks-source { text-align: center; margin-top: 1.8rem; font-size: 0.85rem; color: var(--ink-dim); }
+.picks-source a { color: var(--teal); }
+
 /* ---------- Chips ---------- */
 .chips { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
 .chip {
