@@ -51,6 +51,22 @@
   });
 })();
 
+// ---------- Source tabs ----------
+(function () {
+  const btns = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  if (!btns.length) return;
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tab = btn.getAttribute('data-tab');
+      btns.forEach((b) => b.classList.toggle('active', b === btn));
+      panels.forEach((p) => p.classList.toggle('active', p.getAttribute('data-panel') === tab));
+      // reveal any lazy cards now visible
+      document.querySelectorAll('.tab-panel.active .reveal').forEach((el) => el.classList.add('in'));
+    });
+  });
+})();
+
 // ---------- Reveal-on-scroll ----------
 (function () {
   const items = document.querySelectorAll('.section-head, .card, .chip, .note');

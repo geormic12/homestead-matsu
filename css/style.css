@@ -234,6 +234,71 @@ h2 {
 .picks-source { text-align: center; margin-top: 1.8rem; font-size: 0.85rem; color: var(--ink-dim); }
 .picks-source a { color: var(--teal); }
 
+/* ---------- Source tabs ---------- */
+.tabs-bar {
+  display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;
+  margin: 0 auto 1.6rem; max-width: 760px;
+}
+.tab-btn {
+  cursor: pointer; font-family: inherit; font-size: 0.92rem; font-weight: 600;
+  color: var(--ink-dim); background: var(--card); border: 1px solid var(--line);
+  border-radius: 999px; padding: 0.55rem 1.1rem; display: inline-flex; align-items: center; gap: 0.4rem;
+  transition: all 0.16s ease; white-space: nowrap;
+}
+.tab-btn:hover { color: var(--ink); border-color: rgba(94,224,201,0.4); }
+.tab-btn.active {
+  color: #06241d; background: linear-gradient(120deg, var(--teal), var(--green));
+  border-color: transparent; box-shadow: 0 8px 24px -10px rgba(94,224,201,0.6);
+}
+.tab-count {
+  font-size: 0.72rem; background: rgba(7,11,20,0.18); color: inherit;
+  padding: 0.05rem 0.45rem; border-radius: 999px;
+}
+.tab-btn:not(.active) .tab-count { background: rgba(255,255,255,0.08); }
+.tab-lock { font-size: 0.78rem; opacity: 0.8; }
+
+.tab-panel { display: none; animation: fadepanel 0.35s ease; }
+.tab-panel.active { display: block; }
+@keyframes fadepanel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.panel-note { text-align: center; max-width: 640px; margin: 0 auto 1.5rem; font-size: 0.9rem; color: var(--ink-dim); }
+.panel-note strong { color: var(--ink); }
+
+/* ---------- Redfin text cards ---------- */
+.rf-grid { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+.rf-card { padding: 1.2rem 1.3rem 1.3rem; display: flex; flex-direction: column; }
+.rf-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.7rem; }
+.rf-top .rank {
+  position: static; font-family: 'Fraunces', serif; font-weight: 800; font-size: 0.9rem;
+  color: #06241d; background: linear-gradient(120deg, var(--teal), var(--green));
+  padding: 0.2rem 0.6rem; border-radius: 999px;
+}
+.rf-top .town {
+  position: static; font-size: 0.72rem; font-weight: 600; color: var(--ink);
+  background: rgba(255,255,255,0.06); border: 1px solid var(--line);
+  padding: 0.2rem 0.6rem; border-radius: 999px;
+}
+.rf-card .pick-price { font-size: 1.45rem; margin-bottom: 0.25rem; }
+.rf-card .pick-addr { font-size: 0.96rem; margin-bottom: 0.4rem; }
+.rf-card .pick-specs { margin-bottom: 0.9rem; }
+.rf-card .pick-link { margin-top: auto; }
+
+/* ---------- Blocked-site panels ---------- */
+.blocked {
+  max-width: 640px; margin: 0 auto; text-align: center;
+  background: linear-gradient(160deg, rgba(255,154,209,0.06), rgba(155,140,255,0.05));
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 2.4rem 1.8rem;
+}
+.blocked-icon { font-size: 2.4rem; margin-bottom: 0.6rem; }
+.blocked h3 { font-family: 'Fraunces', serif; font-size: 1.45rem; margin-bottom: 0.7rem; }
+.blocked p { color: var(--ink-dim); font-size: 0.95rem; margin: 0 auto 1.4rem; max-width: 520px; }
+.blocked-btns { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
+.blocked-btns a {
+  text-decoration: none; font-weight: 600; font-size: 0.9rem; color: var(--ink);
+  background: var(--card); border: 1px solid var(--line); border-radius: 999px;
+  padding: 0.55rem 1.15rem; transition: all 0.16s ease;
+}
+.blocked-btns a:hover { background: var(--teal); color: #06241d; border-color: var(--teal); transform: translateY(-2px); }
+
 /* ---------- Chips ---------- */
 .chips { display: flex; flex-wrap: wrap; gap: 0.65rem; justify-content: center; }
 .chip {

@@ -42,27 +42,36 @@
       <span class="price-range">searching $300K &ndash; $400K</span>
     </p>
     <a href="#picks" class="cta" id="bestBtn">
-      See our 30 best picks &nbsp;&rarr;
+      See the top 30 by site &nbsp;&rarr;
     </a>
     <p class="cta-note">Hand-picked Alaska MLS homes in Palmer, Eagle River, Meadow Lakes &amp; Chugiak &mdash; or <a href="#best">browse every listing site yourself</a>.</p>
     <a class="scroll-hint" href="#picks" aria-label="Scroll down"><span></span></a>
   </header>
 
   <main>
-    <!-- TOP 30 PICKS -->
+    <!-- TOP 30 PICKS (tabbed by source) -->
     <section id="picks" class="section">
       <div class="section-head">
-        <span class="kicker">Our top 30 &middot; pulled from the Alaska MLS</span>
-        <h2>The 30 best homes right now</h2>
+        <span class="kicker">Top 30 by site &middot; Palmer &middot; Eagle River &middot; Meadow Lakes &middot; Chugiak</span>
+        <h2>The best homes, by website</h2>
         <p class="lead">
-          Hand-picked from the <strong>Alaska MLS</strong> across <strong>Palmer, Eagle River,
-          Meadow Lakes &amp; Chugiak</strong> (plus nearby) &mdash; <strong>Wasilla and Anchorage
-          are excluded</strong>. Click any home to see all photos and details.
+          One tab per listing site. <strong>Wasilla &amp; Anchorage are excluded.</strong>
+          Sites that block automated tools are marked &mdash; tap through to browse those yourself.
         </p>
-        <p class="lead asof">Sorted low&nbsp;&rarr;&nbsp;high. Most sit in the <strong>$300K&ndash;$400K</strong> target; a few rise to ~$460K because Eagle River &amp; Chugiak run pricier. Verified active <strong>May 30, 2026</strong> &middot; always confirm on the listing.</p>
+        <p class="lead asof">Verified <strong>May 30, 2026</strong> &middot; mostly $300K&ndash;$450K &middot; always confirm on the listing.</p>
       </div>
 
-      <div class="grid picks-grid">
+      <div class="tabs-bar" role="tablist">
+        <button class="tab-btn active" data-tab="mls">Alaska&nbsp;MLS <span class="tab-count">30</span></button>
+        <button class="tab-btn" data-tab="redfin">Redfin <span class="tab-count">30</span></button>
+        <button class="tab-btn" data-tab="zillow">Zillow <span class="tab-lock">&#128274;</span></button>
+        <button class="tab-btn" data-tab="realtor">Realtor.com <span class="tab-lock">&#128274;</span></button>
+        <button class="tab-btn" data-tab="homes">Homes.com <span class="tab-lock">&#128274;</span></button>
+      </div>
+
+      <div class="tab-panel active" data-panel="mls">
+        <p class="panel-note">Pulled live from the <strong>Alaska MLS</strong> via 907abodes.com &mdash; full photos, sorted low&nbsp;&rarr;&nbsp;high.</p>
+        <div class="grid picks-grid">
 
         <a class="card pick-card" href="https://www.907abodes.com/property/26-6213/" target="_blank" rel="noopener">
           <div class="pick-photo"><img src="images/listings30/01.jpg" alt="1860 N Monte Vista Drive Unit C, Palmer" loading="lazy" /><span class="rank">#1</span><span class="town">Palmer</span></div>
@@ -364,8 +373,305 @@
           </div>
         </a>
 
+        </div>
       </div>
-      <p class="picks-source">Listings sourced from the Alaska MLS via <a href="https://www.907abodes.com/" target="_blank" rel="noopener">907abodes.com</a>. Want more? <a href="#best">Browse every site below.</a></p>
+
+      <div class="tab-panel" data-panel="redfin">
+        <p class="panel-note">Pulled live from <strong>Redfin</strong>. Redfin's Alaska coverage leans toward Meadow&nbsp;Lakes &amp; new construction. Tap any card for photos &amp; details on Redfin.</p>
+        <div class="grid picks-grid rf-grid">
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Cottonwood-Crystal-Forest/home/199582504" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#1</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$295,000</p>
+          <p class="pick-addr">Cottonwood Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,092 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Willow-Crystal-Forest/home/199582528" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#2</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$297,000</p>
+          <p class="pick-addr">Willow Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,102 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Concord-Crystal-Forest/home/199582555" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#3</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$310,000</p>
+          <p class="pick-addr">Concord Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,226 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Lincoln-Crystal-Forest/home/199582524" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#4</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$312,000</p>
+          <p class="pick-addr">Lincoln Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,228 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Birchwood-Crystal-Forest/home/199582568" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#5</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$334,500</p>
+          <p class="pick-addr">Birchwood Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,448 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Eagle-River/11671-Hummer-Bay-Loop-99577/unit-43/home/131942055" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#6</span><span class="town">Eagle River</span></div>
+          <p class="pick-price">$335,000</p>
+          <p class="pick-addr">11671 Hummer Bay Loop #43</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,549 sqft &middot; Built 2007</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Eagle-River/12660-Old-Glenn-Hwy-99577/unit-C/home/172141435" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#7</span><span class="town">Eagle River</span></div>
+          <p class="pick-price">$339,000</p>
+          <p class="pick-addr">12660 Old Glenn Hwy Unit C</p>
+          <p class="pick-specs">2 bd &middot; 2.5 ba &middot; 1,524 sqft &middot; Built 2002</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/4830-W-Hidden-Paradise-Rd-99623/home/134682615" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#8</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$345,000</p>
+          <p class="pick-addr">4830 W Hidden Paradise Rd</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,400 sqft &middot; Built 2010</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Deshka-Crystal-Forest/home/199582563" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#9</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$345,000</p>
+          <p class="pick-addr">Deshka Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,444 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Wallawa-Crystal-Forest/home/199582543" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#10</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$347,900</p>
+          <p class="pick-addr">Wallawa Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,520 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Clearwater-Crystal-Forest/home/199582547" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#11</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$359,500</p>
+          <p class="pick-addr">Clearwater Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.5 ba &middot; 1,575 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/9401-W-Easy-St-99623/home/134787741" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#12</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$365,000</p>
+          <p class="pick-addr">9401 W Easy St</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,232 sqft &middot; Built 2008</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Jade-Crystal-Forest/home/199582564" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#13</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$369,500</p>
+          <p class="pick-addr">Jade Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,617 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/8760-W-Dreamy-Dr-99623/home/134373433" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#14</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$389,900</p>
+          <p class="pick-addr">8760 W Dreamy Dr</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,420 sqft &middot; Built 2024</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Eagle-River/11337-Conquistador-Dr-99577/unit-13B/home/201917523" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#15</span><span class="town">Eagle River</span></div>
+          <p class="pick-price">$399,000</p>
+          <p class="pick-addr">11337 Conquistador Dr Unit 13B</p>
+          <p class="pick-specs">2 bd &middot; 2.0 ba &middot; 1,361 sqft &middot; Built 2026</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/9449-W-Palermo-CIR-99654/home/201250544" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#16</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$409,000</p>
+          <p class="pick-addr">9449 W Palermo Cir</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,422 sqft &middot; Built 2026</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Kenai-Crystal-Forest/home/199582535" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#17</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$412,500</p>
+          <p class="pick-addr">Kenai Crystal Forest Plan</p>
+          <p class="pick-specs">4 bd &middot; 2.5 ba &middot; 1,894 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Eagle-River/17660-Beaujolais-Dr-99577/home/130974382" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#18</span><span class="town">Eagle River</span></div>
+          <p class="pick-price">$416,000</p>
+          <p class="pick-addr">17660 Beaujolais Dr</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,950 sqft &middot; Built 1986</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Chugiak/23012-Homestead-Rd-99567/home/131933930" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#19</span><span class="town">Chugiak</span></div>
+          <p class="pick-price">$417,000</p>
+          <p class="pick-addr">23012 Homestead Rd</p>
+          <p class="pick-specs">3 bd &middot; 1.0 ba &middot; 1,898 sqft &middot; Built 1985</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Palmer/750-W-Fern-Ave-99645/home/135009521" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#20</span><span class="town">Palmer</span></div>
+          <p class="pick-price">$419,900</p>
+          <p class="pick-addr">750 W Fern Ave</p>
+          <p class="pick-specs">4 bd &middot; 2.0 ba &middot; 1,932 sqft &middot; Built 1997</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Ptarmigan-Crystal-Forest/home/199582538" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#21</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$420,500</p>
+          <p class="pick-addr">Ptarmigan Crystal Forest Plan</p>
+          <p class="pick-specs">4 bd &middot; 3.0 ba &middot; 2,107 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/2386-N-Lewis-Rd-99623/home/134932321" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#22</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$425,000</p>
+          <p class="pick-addr">2386 N Lewis Rd</p>
+          <p class="pick-specs">3 bd &middot; 3.0 ba &middot; 2,180 sqft &middot; Built 2005</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/9432-W-Palermo-CIR-99623/home/201238048" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#23</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$425,000</p>
+          <p class="pick-addr">9432 W Palermo Cir</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,500 sqft &middot; Built 2026</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/2900-N-Monroe-Cir-99623/home/135538128" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#24</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$429,000</p>
+          <p class="pick-addr">2900 N Monroe Cir</p>
+          <p class="pick-specs">4 bd &middot; 2.0 ba &middot; 1,464 sqft &middot; Built 2016</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/Wasilla/Kachemak-Crystal-Forest/home/199582503" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#25</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$429,000</p>
+          <p class="pick-addr">Kachemak Crystal Forest Plan</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,828 sqft</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/9546-W-Palermo-CIR-99623/home/201837115" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#26</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$435,000</p>
+          <p class="pick-addr">9546 W Palermo Cir</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,567 sqft &middot; Built 2026</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/7392-W-Indigo-Dr-99623/home/134860640" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#27</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$439,500</p>
+          <p class="pick-addr">7392 W Indigo Dr</p>
+          <p class="pick-specs">4 bd &middot; 3.0 ba &middot; 2,236 sqft &middot; Built 1983</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Palmer/530-Jepson-Cir-99645/home/134878065" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#28</span><span class="town">Palmer</span></div>
+          <p class="pick-price">$440,000</p>
+          <p class="pick-addr">530 Jepson Cir</p>
+          <p class="pick-specs">4 bd &middot; 3.5 ba &middot; 2,800 sqft &middot; Built 1993</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/4657-N-Edenfield-Rd-99623/home/185296715" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#29</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$440,000</p>
+          <p class="pick-addr">4657 N Edenfield Rd</p>
+          <p class="pick-specs">3 bd &middot; 2.0 ba &middot; 1,436 sqft &middot; Built 2023</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        <a class="card rf-card" href="https://www.redfin.com/AK/Wasilla/9413-W-Palermo-CIR-99623/home/202052106" target="_blank" rel="noopener">
+          <div class="rf-top"><span class="rank">#30</span><span class="town">Meadow Lakes</span></div>
+          <p class="pick-price">$442,000</p>
+          <p class="pick-addr">9413 W Palermo Cir</p>
+          <p class="pick-specs">4 bd &middot; 2.0 ba &middot; 1,504 sqft &middot; Built 2026</p>
+          <span class="pick-link">View on Redfin &rarr;</span>
+        </a>
+
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="zillow">
+        <div class="blocked">
+          <div class="blocked-icon">&#128274;</div>
+          <h3>Zillow blocks automated access</h3>
+          <p>Zillow uses an anti-bot wall (PerimeterX) that stops any tool &mdash; even a real
+          browser session &mdash; from reading its listings, so we can't pull its homes into this
+          page. You can still browse Zillow yourself, pre-filtered to your areas and budget:</p>
+          <div class="blocked-btns">
+            <a href="https://www.zillow.com/palmer-ak/300000-450000_price/" target="_blank" rel="noopener">Palmer</a>
+            <a href="https://www.zillow.com/eagle-river-ak/300000-450000_price/" target="_blank" rel="noopener">Eagle River</a>
+            <a href="https://www.zillow.com/chugiak-ak/300000-450000_price/" target="_blank" rel="noopener">Chugiak</a>
+            <a href="https://www.zillow.com/meadow-lakes-ak/300000-450000_price/" target="_blank" rel="noopener">Meadow Lakes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="realtor">
+        <div class="blocked">
+          <div class="blocked-icon">&#128274;</div>
+          <h3>Realtor.com blocks automated access</h3>
+          <p>Realtor.com uses an anti-bot wall (rate-limit / 429) that stops any tool &mdash; even a real
+          browser session &mdash; from reading its listings, so we can't pull its homes into this
+          page. You can still browse Realtor.com yourself, pre-filtered to your areas and budget:</p>
+          <div class="blocked-btns">
+            <a href="https://www.realtor.com/realestateandhomes-search/Palmer_AK/price-300000-450000" target="_blank" rel="noopener">Palmer</a>
+            <a href="https://www.realtor.com/realestateandhomes-search/Eagle-River_AK/price-300000-450000" target="_blank" rel="noopener">Eagle River</a>
+            <a href="https://www.realtor.com/realestateandhomes-search/Chugiak_AK/price-300000-450000" target="_blank" rel="noopener">Chugiak</a>
+            <a href="https://www.realtor.com/realestateandhomes-search/Meadow-Lakes_AK/price-300000-450000" target="_blank" rel="noopener">Meadow Lakes</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="homes">
+        <div class="blocked">
+          <div class="blocked-icon">&#128274;</div>
+          <h3>Homes.com blocks automated access</h3>
+          <p>Homes.com uses an anti-bot wall (Cloudflare) that stops any tool &mdash; even a real
+          browser session &mdash; from reading its listings, so we can't pull its homes into this
+          page. You can still browse Homes.com yourself, pre-filtered to your areas and budget:</p>
+          <div class="blocked-btns">
+            <a href="https://www.homes.com/palmer-ak/price-300k-450k/" target="_blank" rel="noopener">Palmer</a>
+            <a href="https://www.homes.com/eagle-river-ak/price-300k-450k/" target="_blank" rel="noopener">Eagle River</a>
+            <a href="https://www.homes.com/chugiak-ak/price-300k-450k/" target="_blank" rel="noopener">Chugiak</a>
+            <a href="https://www.homes.com/meadow-lakes-ak/price-300k-450k/" target="_blank" rel="noopener">Meadow Lakes</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="picks-source">Two sites (Redfin, Alaska MLS) allow data access; three block it. Prefer the DIY route? <a href="#best">Every search site is linked below.</a></p>
     </section>
 
     <!-- BEST OPTIONS -->
