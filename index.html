@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homestead — Randy &amp; Jenna's Mat-Su Valley Home Hunt</title>
+  <meta name="description" content="A home-buying resource hub for Randy &amp; Jenna George: pre-filtered listings and search links for houses around $350,000 in the Mat-Su Valley, Alaska (Wasilla, Palmer, Big Lake & more)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Aurora / mountain backdrop -->
+  <div class="sky" aria-hidden="true">
+    <canvas id="stars"></canvas>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <svg class="mountains" viewBox="0 0 1440 320" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,320 L0,180 L120,90 L240,160 L360,70 L480,150 L600,40 L720,140 L840,80 L960,170 L1080,100 L1200,180 L1320,120 L1440,190 L1440,320 Z" />
+    </svg>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="eyebrow">A Mat-Su Valley home hunt for</p>
+    <h1>Randy&nbsp;&amp;&nbsp;Jenna</h1>
+    <p class="subtitle">
+      Everything you need to find your next home in the
+      <strong>Matanuska-Susitna Valley, Alaska</strong> &mdash; all in one place.
+    </p>
+    <p class="price-tag">
+      <span class="price-dot"></span>
+      Target budget <strong>~$350,000</strong>
+      <span class="price-range">searching $300K &ndash; $400K</span>
+    </p>
+    <a href="#best" class="cta" id="bestBtn">
+      Show me the best options &nbsp;&rarr;
+    </a>
+    <p class="cta-note">Opens the top search portals, pre-filtered to your price range.</p>
+  </header>
+
+  <main>
+    <!-- BEST OPTIONS -->
+    <section id="best" class="section">
+      <div class="section-head">
+        <span class="kicker">Start here</span>
+        <h2>Best options, ready to browse</h2>
+        <p class="lead">
+          Each card opens a live listings page already filtered to houses
+          <strong>$300K&ndash;$400K</strong> in the Mat-Su Valley. New listings appear automatically.
+        </p>
+        <button id="openAll" class="open-all">Open all four in new tabs</button>
+      </div>
+
+      <div class="grid best-grid">
+        <a class="card best-card" data-best href="https://www.zillow.com/matanuska-susitna-borough-ak/300000-400000_price/" target="_blank" rel="noopener">
+          <span class="card-badge">Most listings</span>
+          <h3>Zillow &mdash; Mat-Su Borough</h3>
+          <p>The largest pool of listings, photos, and price history. Filtered to your range across the whole valley.</p>
+          <span class="card-link">Browse on Zillow &rarr;</span>
+        </a>
+
+        <a class="card best-card" data-best href="https://www.realtor.com/realestateandhomes-search/Matanuska-Susitna-County_AK/price-300000-400000" target="_blank" rel="noopener">
+          <span class="card-badge">Most accurate</span>
+          <h3>Realtor.com &mdash; Mat-Su County</h3>
+          <p>Pulls straight from the Alaska MLS, so listing status tends to be the most up to date.</p>
+          <span class="card-link">Browse on Realtor.com &rarr;</span>
+        </a>
+
+        <a class="card best-card" data-best href="https://www.redfin.com/county/200/AK/Matanuska-Susitna-Borough/filter/min-price=300k,max-price=400k" target="_blank" rel="noopener">
+          <span class="card-badge">Best map</span>
+          <h3>Redfin &mdash; Mat-Su Borough</h3>
+          <p>Excellent map view and fast notifications. Great for seeing exactly where each home sits.</p>
+          <span class="card-link">Browse on Redfin &rarr;</span>
+        </a>
+
+        <a class="card best-card" data-best href="https://www.homes.com/matanuska-susitna-borough-ak/price-300k-400k/" target="_blank" rel="noopener">
+          <span class="card-badge">Clean &amp; simple</span>
+          <h3>Homes.com &mdash; Mat-Su Borough</h3>
+          <p>A clean, ad-light alternative that pulls the same MLS feed. Nice for a second look.</p>
+          <span class="card-link">Browse on Homes.com &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- BY TOWN -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">Zoom in</span>
+        <h2>Search by town</h2>
+        <p class="lead">The Mat-Su Valley is big. These links narrow Zillow to one community at a time &mdash; still filtered to $300K&ndash;$400K.</p>
+      </div>
+      <div class="chips">
+        <a class="chip" href="https://www.zillow.com/wasilla-ak/300000-400000_price/" target="_blank" rel="noopener">Wasilla</a>
+        <a class="chip" href="https://www.zillow.com/palmer-ak/300000-400000_price/" target="_blank" rel="noopener">Palmer</a>
+        <a class="chip" href="https://www.zillow.com/big-lake-ak/300000-400000_price/" target="_blank" rel="noopener">Big Lake</a>
+        <a class="chip" href="https://www.zillow.com/houston-ak/300000-400000_price/" target="_blank" rel="noopener">Houston</a>
+        <a class="chip" href="https://www.zillow.com/sutton-ak/300000-400000_price/" target="_blank" rel="noopener">Sutton</a>
+        <a class="chip" href="https://www.zillow.com/willow-ak/300000-400000_price/" target="_blank" rel="noopener">Willow</a>
+        <a class="chip" href="https://www.zillow.com/talkeetna-ak/300000-400000_price/" target="_blank" rel="noopener">Talkeetna</a>
+        <a class="chip" href="https://www.zillow.com/wasilla-ak/250000-450000_price/" target="_blank" rel="noopener">Wider net&nbsp;($250K&ndash;$450K)</a>
+      </div>
+    </section>
+
+    <!-- GLOSSARY -->
+    <section class="section">
+      <div class="section-head">
+        <span class="kicker">The glossary</span>
+        <h2>Every place to search, by hand</h2>
+        <p class="lead">
+          Want to dig deeper yourself? Here is the full list &mdash; national portals,
+          local Alaska brokerages, and useful tools. Open any one and search away.
+        </p>
+      </div>
+
+      <h3 class="group-title">National listing portals</h3>
+      <div class="grid link-grid">
+        <a class="card link-card" href="https://www.zillow.com/matanuska-susitna-borough-ak/" target="_blank" rel="noopener">
+          <h4>Zillow</h4><p>Biggest inventory, Zestimates, price history, saved searches.</p>
+        </a>
+        <a class="card link-card" href="https://www.realtor.com/realestateandhomes-search/Matanuska-Susitna-County_AK" target="_blank" rel="noopener">
+          <h4>Realtor.com</h4><p>Direct MLS feed &mdash; usually the most current listing status.</p>
+        </a>
+        <a class="card link-card" href="https://www.redfin.com/county/200/AK/Matanuska-Susitna-Borough" target="_blank" rel="noopener">
+          <h4>Redfin</h4><p>Best-in-class map and fast new-listing alerts.</p>
+        </a>
+        <a class="card link-card" href="https://www.homes.com/matanuska-susitna-borough-ak/" target="_blank" rel="noopener">
+          <h4>Homes.com</h4><p>Clean interface, fewer ads, same MLS data.</p>
+        </a>
+        <a class="card link-card" href="https://www.trulia.com/for_sale/Wasilla,AK/300000-400000_price/" target="_blank" rel="noopener">
+          <h4>Trulia</h4><p>Neighborhood insights, crime &amp; school overlays (Wasilla).</p>
+        </a>
+        <a class="card link-card" href="https://www.houzeo.com/homes-for-sale/alaska/wasilla/homes-for-sale-under-400k" target="_blank" rel="noopener">
+          <h4>Houzeo</h4><p>For-sale-by-owner &amp; flat-fee listings under $400K in Wasilla.</p>
+        </a>
+      </div>
+
+      <h3 class="group-title">Local Alaska brokerages &amp; Valley experts</h3>
+      <div class="grid link-grid">
+        <a class="card link-card" href="https://www.alaskabuiltrealestate.com/search-by-area" target="_blank" rel="noopener">
+          <h4>Alaska Built Real Estate</h4><p>Mat-Su specialists. Search by area &amp; price, incl. $300K&ndash;$400K.</p>
+        </a>
+        <a class="card link-card" href="https://remaxdynamicproperties.com/mat-su-valley-homes-for-sale" target="_blank" rel="noopener">
+          <h4>RE/MAX Dynamic Properties</h4><p>Big local brokerage with a dedicated Mat-Su Valley feed.</p>
+        </a>
+        <a class="card link-card" href="https://www.propertiesofalaska.com/mat-su-valley/" target="_blank" rel="noopener">
+          <h4>Properties of Alaska</h4><p>Curated Mat-Su Valley homes from a long-running Alaska team.</p>
+        </a>
+        <a class="card link-card" href="https://www.wasillarealestate.com/homes-for-sale-in-palmer-ak" target="_blank" rel="noopener">
+          <h4>Wasilla Real Estate</h4><p>Wasilla &amp; Palmer focused, with neighborhood guides.</p>
+        </a>
+        <a class="card link-card" href="https://www.907abodes.com/wasilla-homes-for-sale/" target="_blank" rel="noopener">
+          <h4>907 Abodes</h4><p>Local agent site with Wasilla listings and area info.</p>
+        </a>
+        <a class="card link-card" href="https://valleymarket.com/" target="_blank" rel="noopener">
+          <h4>Valley Market Realty</h4><p>Palmer-based brokerage covering the whole Valley.</p>
+        </a>
+      </div>
+
+      <h3 class="group-title">Helpful tools</h3>
+      <div class="grid link-grid">
+        <a class="card link-card" href="https://myproperty.matsugov.us/" target="_blank" rel="noopener">
+          <h4>Mat-Su Borough &mdash; myProperty</h4><p>Official parcel lookup: ownership, taxes, assessments, maps.</p>
+        </a>
+        <a class="card link-card" href="https://www.zillow.com/mortgage-calculator/" target="_blank" rel="noopener">
+          <h4>Mortgage calculator</h4><p>Estimate the monthly payment on a $350K home.</p>
+        </a>
+        <a class="card link-card" href="https://www.ahfc.us/buy/loan-programs" target="_blank" rel="noopener">
+          <h4>AHFC loan programs</h4><p>Alaska Housing Finance Corp &mdash; first-time &amp; low-rate buyer loans.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- AREA NOTE -->
+    <section class="section note-section">
+      <div class="note">
+        <h2>A quick lay of the land</h2>
+        <p>
+          The Mat-Su Valley sits about 45 minutes north of Anchorage. <strong>Wasilla</strong>
+          and <strong>Palmer</strong> are the two main hubs &mdash; average home values run roughly
+          $358K in Wasilla and $380K in Palmer, so a <strong>$350K budget is right in the sweet spot</strong>,
+          especially in Wasilla, Big Lake, and Houston. Push toward $400K and Palmer opens up;
+          drop toward $300K and you'll find cabins, smaller homes, and great lots.
+        </p>
+        <p class="tip">
+          <strong>Tip:</strong> Tap <em>"Show me the best options"</em> up top to open all four
+          big portals at once, then save a search on each so new homes email straight to you.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with care for <strong>Randy &amp; Jenna George</strong> &middot; Mat-Su Valley, Alaska 🏔️</p>
+    <p class="fine">Listing links are filtered to ~$300K&ndash;$400K. Prices and availability change daily &mdash; always confirm on the portal.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
